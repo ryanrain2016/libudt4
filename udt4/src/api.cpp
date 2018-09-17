@@ -1113,11 +1113,11 @@ int CUDTUnited::epoll_remove_usock(const int eid, const UDTSOCKET u)
 {
    int ret = m_EPoll.remove_usock(eid, u);
 
-   CUDTSocket* s = locate(u);
-   if (NULL != s)
-   {
-      s->m_pUDT->removeEPoll(eid);
-   }
+   // CUDTSocket* s = locate(u);
+   // if (NULL != s)
+   // {
+   //    s->m_pUDT->removeEPoll(eid);
+   // }
    //else
    //{
    //   throw CUDTException(5, 4);
